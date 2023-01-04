@@ -16,4 +16,4 @@ jobs:
           docker build -t randiapriliyadi/uas-pccks:latest -f Dockerfile .
 
       - name: push to dockerhub
-        run: docker login -u ${{secrets.randiapriliyadi}} -p ${{secrets.dckr_pat_TZRsZxkGsJgqOaTqKeOwArylpRg}} && docker push randiapriliyadi/uas-pccks:latest
+        run: docker login -u ${{secrets.USERNAME}} -p ${{secrets.ACCESS_TOKEN}} && docker push randiapriliyadi/uas-pccks:latest
